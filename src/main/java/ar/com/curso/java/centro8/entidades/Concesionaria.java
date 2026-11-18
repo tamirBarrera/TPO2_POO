@@ -28,7 +28,7 @@ public class Concesionaria implements IContratoConcesionaria {
     @Override
     public void buscarPorLetra(String letra) {
         if (letra == null || letra.isEmpty())
-            return null;
+            return;
 
 //lista de elementos que contengan la letra asignada
         List<Vehiculo> encontrados = vehiculos.stream() //
