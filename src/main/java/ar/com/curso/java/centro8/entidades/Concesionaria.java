@@ -30,11 +30,12 @@ public class Concesionaria implements IContratoConcesionaria {
         if (letra == null || letra.isEmpty())
             return;
 
+//lista de elementos que contengan la letra asignada
         List<Vehiculo> encontrados = vehiculos.stream() //
                 .filter(v -> v.modelo.toLowerCase().contains(letra.toLowerCase()))
-                .toList(); // crea una lista nueva llamada encontrados
-        if (encontrados.isEmpty()) { // Pregunta directamente si la caja quedó vacía. Si ningún vehículo pasó el
-                                     // filtro por ende arrojaria:
+                .toList();
+        if (encontrados.isEmpty()) {
+                                     // si da nulo
             System.out.println("No hay vehiculos ingresados con esa letra '" + letra + "'.");
         } else {
             encontrados.forEach(v -> System.out.println("Vehiculo con la letra '"
