@@ -16,8 +16,6 @@ public interface IContratoConcesionaria {
 
     void agregarVehiculo(Vehiculo vehiculo);
 
-    void reporteConcesionaria(String letra);
-
     void buscarPorLetra(String letra);
 
     void mostrarVehiculoMasCaro();
