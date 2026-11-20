@@ -15,6 +15,6 @@ public class Moto extends Vehiculo {
 
     @Override
     public String toString() {
-        return "Marca: " + marca + " // Modelo: " + modelo + " // Cilindrada: " + cilindrada + " // Precio: $" + formatearString();
+        return "Marca: " + marca + " // Modelo: " + modelo + " // Cilindrada: " + cilindrada + " // Precio: " + formatearString();
     }
 }
